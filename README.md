@@ -2,10 +2,10 @@
 ## Terminal App
 
 ### Group Members
-Julia Ryan
-Brett Rapp
-Chen Zhao
-Nick Sonner
+- Julia Ryan
+- Brett Rapp
+- Chen Zhao
+- Nick Sonner
 
 # TERMINAL APP: BINDER
 (Julia Ryan, Brett Rapp, Chen (Josh) Zhao, Nick Sonner)
@@ -30,8 +30,8 @@ functionality for the proposed solution.
 Planning and wireframing. Defined the methods and variables needed. Walked through the user’s
 journey, questioning our design principles, refining the overall project.
 ### Day 3
-● Begin coding menus and methods for displaying data in tables
-● Testing and implementation of app “elements”
+- Begin coding menus and methods for displaying data in tables
+- Testing and implementation of app “elements”
 ### Gems
 1. gem catpix
 2. gem colorize
@@ -48,12 +48,12 @@ journey, questioning our design principles, refining the overall project.
 ## UX
 ### Welcome page
 Includes:
-● Binder banner using gem catpix
-● Interactive menu with below options:
-○ Sign in
-○ Sign up
-○ Help
-○ Exit
+- Binder banner using gem catpix
+- Interactive menu with below options:
+- Sign in
+- Sign up
+- Help
+- Exit
 ###Sign in
 Requests user to enter email and password
 Main menu page
@@ -93,11 +93,11 @@ back to the welcome menu
 Logs the user out and returns to the welcome menu
 ### Sign up
 A series of questions, prompting the user for input to update their account information:
-● Name
-● Contact number
-● Email
-● Password
-● House number
+- Name
+- Contact number
+- Email
+- Password
+- House number
 The street at present is defaulted to Victoria St, future implementation would allow users to join
 other pre-existing streets.
 ### Help
@@ -106,24 +106,24 @@ yet available” and returns the user to the welcome menu. In the future this wi
 information on the app.
 ### Exit
 Exits the program, returning the user to the terminal.
-Classes
-Class Street
+### Classes
+#### Class Street
 Attributes
 * name
 * suburb
 * postcode
 * state
 * houses = []
-Methods
-welcome_message
-add_house
-remove_house
-find_house
-available_bin_space
-available_recycle_space
-available_general_space
-available_green_space
-Class House
+##### Methods
+* welcome_message
+* add_house
+* remove_house
+* find_house
+* available_bin_space
+* available_recycle_space
+* available_general_space
+* available_green_space
+#### Class House
 Attributes
 * street = street object
 * house number
@@ -133,50 +133,50 @@ Attributes
 * password
 * phone
 * bins = []
-Methods
-add_bin
-remove_bin
-general_bin_space # too similar to available_general_space
-recycle_bin_space
-green_bin_space
-collection_day
-contact_details
-bin_status
-upcoming_collection_days
-Class Bin
+##### Methods
+* add_bin
+* remove_bin
+* general_bin_space # too similar to available_general_space
+* recycle_bin_space
+* green_bin_space
+* collection_day
+* contact_details
+* bin_status
+* upcoming_collection_days
+#### Class Bin
 * type
 * size
 * house
 * bin_level
 * collection_day
-Methods
-fill_bin
-empty_bin
-File Structure
-main.rb
-menu.rb
-street.rb
-house.rb
-bin.rb
-contact.rb
-binder_logo.jpg
-Product problems
-● Who updates the bin? The bin owner?
-● What happens when users fail to update their bin?
-● We need to add the function of persistence between sessions & clients.
-Please note:
+##### Methods
+* fill_bin
+* empty_bin
+### File Structure
+* main.rb
+* menu.rb
+* street.rb
+* house.rb
+* bin.rb
+* contact.rb
+* binder_logo.jpg
+### Product problems
+*  Who updates the bin? The bin owner?
+*  What happens when users fail to update their bin?
+*  We need to add the function of persistence between sessions & clients.
+##### Please note:
 Due to Brett’s personal account information being used in the code for the twilio integration, this
 functionality has been disabled from the submitted code (his credentials have been replace with
 string values of the corresponding variable.) If anyone requires a demonstration of the code, we
 are more than happy to demo it again with the missing credentials.
-Future Products (bin jokes)
-● buber
+#### Future Products (bin jokes)
+*  buber
 Have a friendly buber driver pick you up at your location, and drop you off safely at the your bin
 destination
-● Binstagram
+*  Binstagram
 A simple, fun & creative way to capture, edit & share photos and videos of bins with friends &
 family.
-● Binbook
+*  Binbook
 Connect with friends, family and other people you know, sharing information on bins.
-● Boogle
+*  Boogle
 Search the world's bin information, including webpages, images, videos and more
